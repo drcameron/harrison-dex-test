@@ -408,9 +408,9 @@
                 focus.append('line')
                     .attr('class', 'high-line')
                     .attr('x1', xScale(dataRange[0]))
-                    .attr('y1', yScale(scaleBg(100)))
+                    .attr('y1', yScale(scaleBg(250)))
                     .attr('x2', xScale(dataRange[1]))
-                    .attr('y2', yScale(scaleBg(100)))
+                    .attr('y2', yScale(scaleBg(250)))
                     .style('stroke-dasharray', ('3, 3'))
                     .attr('stroke', 'grey');
 
@@ -454,9 +454,9 @@
                 context.append('line')
                     .attr('class', 'high-line')
                     .attr('x1', xScale(dataRange[0]))
-                    .attr('y1', yScale2(scaleBg(100)))
+                    .attr('y1', yScale2(scaleBg(250)))
                     .attr('x2', xScale(dataRange[1]))
-                    .attr('y2', yScale2(scaleBg(100)))
+                    .attr('y2', yScale2(scaleBg(250)))
                     .style('stroke-dasharray', ('3, 3'))
                     .attr('stroke', 'grey');
 
@@ -511,9 +511,9 @@
                     .transition()
                     .duration(UPDATE_TRANS_MS)
                     .attr('x1', xScale(currentBrushExtent[0]))
-                    .attr('y1', yScale(scaleBg(100)))
+                    .attr('y1', yScale(scaleBg(250)))
                     .attr('x2', xScale(currentBrushExtent[1]))
-                    .attr('y2', yScale(scaleBg(100)));
+                    .attr('y2', yScale(scaleBg(250)));
 
                 // transition low line to correct location
                 focus.select('.low-line')
@@ -556,9 +556,9 @@
                     .transition()
                     .duration(UPDATE_TRANS_MS)
                     .attr('x1', xScale2(dataRange[0]))
-                    .attr('y1', yScale2(scaleBg(100)))
+                    .attr('y1', yScale2(scaleBg(250)))
                     .attr('x2', xScale2(dataRange[1]))
-                    .attr('y2', yScale2(scaleBg(100)));
+                    .attr('y2', yScale2(scaleBg(250)));
 
                 // transition low line to correct location
                 context.select('.low-line')
