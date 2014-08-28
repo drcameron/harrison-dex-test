@@ -511,18 +511,18 @@
                     .transition()
                     .duration(UPDATE_TRANS_MS)
                     .attr('x1', xScale(currentBrushExtent[0]))
-                    .attr('y1', yScale(scaleBg(180)))
+                    .attr('y1', yScale(scaleBg(250)))
                     .attr('x2', xScale(currentBrushExtent[1]))
-                    .attr('y2', yScale(scaleBg(180)));
+                    .attr('y2', yScale(scaleBg(250)));
 
                 // transition low line to correct location
                 focus.select('.low-line')
                     .transition()
                     .duration(UPDATE_TRANS_MS)
                     .attr('x1', xScale(currentBrushExtent[0]))
-                    .attr('y1', yScale(scaleBg(80)))
+                    .attr('y1', yScale(scaleBg(70)))
                     .attr('x2', xScale(currentBrushExtent[1]))
-                    .attr('y2', yScale(scaleBg(80)));
+                    .attr('y2', yScale(scaleBg(70)));
 
                 // transition open-top line to correct location
                 focus.select('.open-top')
@@ -556,18 +556,18 @@
                     .transition()
                     .duration(UPDATE_TRANS_MS)
                     .attr('x1', xScale2(dataRange[0]))
-                    .attr('y1', yScale2(scaleBg(180)))
+                    .attr('y1', yScale2(scaleBg(250)))
                     .attr('x2', xScale2(dataRange[1]))
-                    .attr('y2', yScale2(scaleBg(180)));
+                    .attr('y2', yScale2(scaleBg(250)));
 
                 // transition low line to correct location
                 context.select('.low-line')
                     .transition()
                     .duration(UPDATE_TRANS_MS)
                     .attr('x1', xScale2(dataRange[0]))
-                    .attr('y1', yScale2(scaleBg(80)))
+                    .attr('y1', yScale2(scaleBg(70)))
                     .attr('x2', xScale2(dataRange[1]))
-                    .attr('y2', yScale2(scaleBg(80)));
+                    .attr('y2', yScale2(scaleBg(70)));
             }
         }
 
