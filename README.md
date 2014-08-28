@@ -25,7 +25,7 @@ Requirements:
 - [Node.js](http://nodejs.org/)
 
 Clone this repo then install dependencies into the root of the project:
-
+ 
 ```bash
 $ npm install
 ```
