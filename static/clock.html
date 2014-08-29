@@ -4,13 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nightscout BG NOW</title>
   <link href="/images/round1.png" rel="icon" id="favicon" type="image/png" />
-  <!--new-->
-  <link rel="stylesheet" type="text/css" href="/css/main.css?v=0.3.3" />
-  <link rel="stylesheet" type="text/css" href="/css/dropdown.css" />
-  <link rel="stylesheet" type="text/css" href="/css/drawer.css" />
-  <link rel="stylesheet" type="text/css" href="/bower_components/tipsy-jmalonzo/src/stylesheets/tipsy.css" />
-  <!-- End New--> 
-  <link rel='stylesheet' type='text/css' href='/css/main.css' />
+    <link rel='stylesheet' type='text/css' href='/css/main.css' />
   <style type="text/css">
     .center {
       text-align: center;
@@ -43,13 +37,13 @@
 </head>
 <body>
   <div class="center">
-   <!--<h1 class="bgnow"></h1>-->
-   <!--new code to test-->
+   <h1 class="bgnow"></h1>
+   <!--new code to test
                <h1>
                <span class="bgnow">---</span>
                <span class="currentDirection">-</span>
                </h1>
-   <!--end new code--> 
+   end new code--> 
   </div>
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript">
@@ -66,9 +60,7 @@
       $('.bgnow').text(rec.sgv);
       var threshold = 1000 * 60 * 13;
       $('.bgnow').toggleClass('stale', (now - last > threshold));
-      //<!--new stuff-->//
-      $('currentDirection').text(rec.svg);
-    }
+      }
 
     function init ( ) {
       console.log('init');
