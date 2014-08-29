@@ -66,6 +66,8 @@
       $('.bgnow').text(rec.sgv);
       var threshold = 1000 * 60 * 13;
       $('.bgnow').toggleClass('stale', (now - last > threshold));
+      //<!--new stuff-->//
+      $('currentDirection').text(rec.svg);
     }
 
     function init ( ) {
